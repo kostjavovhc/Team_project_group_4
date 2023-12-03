@@ -5,8 +5,7 @@ FROM python:3.11.6-alpine3.17
 ENV APPLICATION /Team_project_01
 #WORKING DIRECTORY
 
-RUN apk update && apk add git && git clone 
-#copied all files from current dir
+RUN apk update && apk add git && git clone https://github.com/kostjavovhc/Team_project_group_4.git
 
 WORKDIR  $APPLICATION
 
